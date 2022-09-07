@@ -3,7 +3,7 @@ A Mendix wrapper to the Generex library for generating random Strings that match
 
 ## Usage
 
-### RandomStringFromPattern
+### RandomStringWithPattern
 
 * Pattern - A String with the regular expression the random string needs to match.
 
@@ -21,7 +21,7 @@ The source code, examples, and unit tests can be found on [https://github.com/ro
 When exporting the module from source make sure to include the .jar dependencies listed in the Dependencies section of this document.
 
 ## Author
-Robert Price - (Deck Chair Digital Ltd)[https://deckchair.digital/]
+Robert Price - [Deck Chair Digital Ltd](https://deckchair.digital/)
 
 ## See Also
 [Generex Java project](https://github.com/mifmif/Generex)
