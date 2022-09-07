@@ -1,23 +1,13 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+*.bak
+*.lock
+src/Generex-main/.classpath
+src/Generex-main/.project
+src/Generex-main/deployment/
+src/Generex-main/.mendix-cache/
+src/Generex-main/.svn/
+src/Generex-main/javasource/administration/
+src/Generex-main/javasource/generex/proxies/
+src/Generex-main/javasource/system/
+src/Generex-main/javasource/generex_unittests/proxies/
+GPUCache
+.DS_Store
