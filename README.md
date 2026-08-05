@@ -15,7 +15,7 @@ Original release for Mendix 8.
 
 ### RandomStringWithPattern
 
-* Pattern - A String with the regular expression the random string needs to match.
+* Pattern - A String with the regular expression that the random string needs to match.
 
 Returns a String that matches the passed pattern.
 
@@ -28,7 +28,6 @@ This action can throw an error if a bad Pattern value is passed to it, so rememb
 ## Contributing
 The source code, examples, and unit tests can be found on [https://github.com/robertprice/Generex](https://github.com/robertprice/Generex).
 
-When exporting the module from source make sure to include the .jar dependencies listed in the Dependencies section of this document.
 
 ## Author
 Robert Price - [Deck Chair Digital Ltd](https://deckchair.digital/)
