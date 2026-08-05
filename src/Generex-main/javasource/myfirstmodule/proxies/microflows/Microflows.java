@@ -4,27 +4,46 @@
 
 package myfirstmodule.proxies.microflows;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.mendix.core.Core;
-import com.mendix.core.CoreException;
-import com.mendix.systemwideinterfaces.MendixRuntimeException;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
-public class Microflows
+public final class Microflows
 {
+	/**
+	 * Private constructor to prevent instantiation of this class. 
+	 */
+	private Microflows() {}
+
 	// These are the microflows for the MyFirstModule module
-	public static void aCT_Generate(IContext context, myfirstmodule.proxies.Test _test)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GenerateBuilder(
+		myfirstmodule.proxies.Test _test
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("Test", _test == null ? null : _test.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_Generate").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_Generate");
+		builder = builder.withParam("Test", _test);
+		return builder;
 	}
+
+	public static void aCT_Generate(
+		IContext context,
+		myfirstmodule.proxies.Test _test
+	)
+	{
+		aCT_GenerateBuilder(
+				_test
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_TestBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.DS_Test");
+		return builder;
+	}
+
 	public static myfirstmodule.proxies.Test dS_Test(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		IMendixObject result = (IMendixObject)Core.microflowCall("MyFirstModule.DS_Test").withParams(params).execute(context);
-		return result == null ? null : myfirstmodule.proxies.Test.initialize(context, result);
+		Object result = dS_TestBuilder().execute(context);
+		return result == null ? null : myfirstmodule.proxies.Test.initialize(context, (IMendixObject) result);
 	}
 }

@@ -6,27 +6,24 @@ package datawidgets.proxies;
 
 public enum Enumeration_Example
 {
-	Example_1(new java.lang.String[][] { new java.lang.String[] { "en_US", "Example 1" }, new java.lang.String[] { "en_GB", "Example 1" } }),
-	Example_2(new java.lang.String[][] { new java.lang.String[] { "en_US", "Example 2" }, new java.lang.String[] { "en_GB", "Example 2" } });
+	Example_1("d6837aec-8d3b-450f-b7ce-235149b4a10e"),
+	Example_2("79a4c61a-029c-4ba6-96dc-cd62e0bee3e7");
 
-	private java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private Enumeration_Example(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private Enumeration_Example(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<java.lang.String, java.lang.String>();
-		for (java.lang.String[] captionString : captionStrings)
-			captions.put(captionString[0], captionString[1]);
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		if (captions.containsKey(languageCode))
-			return captions.get(languageCode);
-		return captions.get("en_GB");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_GB");
+		return com.mendix.core.Core.getInternationalizedString("en_GB", i18nCaptionKey);
 	}
 }

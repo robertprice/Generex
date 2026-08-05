@@ -9,5 +9,9 @@ src/Generex-main/javasource/administration/
 src/Generex-main/javasource/generex/proxies/
 src/Generex-main/javasource/system/
 src/Generex-main/javasource/generex_unittests/proxies/
+src/Generex-main/userlib/
+src/Generex-main/vendorlib/
+src/Generex-main/mprcontents/
+src/Generex-main/theme-cache/
 GPUCache
 .DS_Store

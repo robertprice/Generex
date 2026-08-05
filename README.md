@@ -1,6 +1,16 @@
 # Generex
 A Mendix wrapper to the Generex library for generating random Strings that match a given regular expression.
 
+## Changes
+
+### 1.1.0
+
+Upgraded to Mendix 11.12.0. We now use managed dependencies in the module
+
+### 1.0.0
+
+Original release for Mendix 8.
+
 ## Usage
 
 ### RandomStringWithPattern

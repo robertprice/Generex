@@ -6,8 +6,13 @@ package atlas_core.proxies.constants;
 
 import com.mendix.core.Core;
 
-public class Constants
+public final class Constants
 {
+	/**
+	 * Private constructor to prevent instantiation of this class. 
+	 */
+	private Constants() {}
+
 	// These are the constants for the Atlas_Core module
 
 	public static java.lang.String getAtlas_Core_Version()

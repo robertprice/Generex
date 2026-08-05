@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "widgets": [
+    {
+      "sha-256": "64b7988d62f05155a67bb34f220d5ce4186115acb6e448c7b1c1efb1f3d95ae3",
+      "name": "BadgeButton",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "3256b556-8345-46e1-b86d-45bada1d901d"
+    },
+    {
+      "sha-256": "81c135ca66ddb2ea587f1bc95d22c9efbc0717c12ca272aee1d5faf82afed2bb",
+      "name": "Timeline",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "e354f4a2-0372-4579-907e-333a0dc2feee"
+    },
+    {
+      "sha-256": "b0f13761813ba911e08272d37b3927e3d903bbf6a0202c1c99703edc1448cd4b",
+      "name": "Badge",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "d23deb27-778a-49d8-a9eb-735aebe7b153"
+    },
+    {
+      "sha-256": "723928dee6a356baadf2be4ae6a81d2161ce49f3fc7da0d43e76b3309ed59e7a",
+      "name": "VideoPlayer",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "4fd32947-cd12-4b12-b152-42e9b7c82f43"
+    },
+    {
+      "sha-256": "b52e345aeac6d1d2b4aff0489e03005434e2bd2e705c1bee908059c6cb87a860",
+      "name": "StarRating",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "462d026c-bf8c-4f2c-a687-6732d918c829"
+    },
+    {
+      "sha-256": "7f8ff1c0c5abe840ca285e0503e745e71a6ba9e42fbec79471a4a52cd238f319",
+      "name": "Maps",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "6909bf14-8183-4c3d-b740-f0405990985c"
+    },
+    {
+      "sha-256": "c53fa1f6383efb892197beed85a634e1bfaa8400ae436dbc1ccee34e4b459fcc",
+      "name": "Switch",
+      "version": "4.0.0",
+      "appStoreVersionGuid": "801b82cf-3613-4def-be14-68a38071068c"
+    },
+    {
+      "sha-256": "4fd65848a3bbd2a0555212546be5fe6b0f0b0313da53d4e5ff9f8ff602c555f8",
+      "name": "Fieldset",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "468cdaa7-c1d2-453d-9591-982a79ac8a66"
+    },
+    {
+      "sha-256": "b21bcca76ece3b2a7522401c8cd391f6753dd8fd32c90e921933f2d6b216702e",
+      "name": "AccessibilityHelper",
+      "version": "2.0.0",
+      "appStoreVersionGuid": "87bdd184-4f05-48a8-ade4-4bb76cad92e9"
+    },
+    {
+      "sha-256": "b3d160bdc4bf81bede72bd1d753f500e8a01d4007a12cd2effc2f67539f920aa",
+      "name": "Image",
+      "version": "1.0.0",
+      "appStoreVersionGuid": "a7733f8d-1918-453f-a704-3b88b502be0a"
+    },
+    {
+      "sha-256": "7c5e09d98a050162d030bf577f906fcc0d9933bbbff194267078a256b24dd035",
+      "name": "Barcode Scanner",
+      "version": "2.0.0",
+      "appStoreVersionGuid": "5938420b-a1b7-4e1d-9f22-155307b79ca9"
+    },
+    {
+      "sha-256": "0dda1c6567b208ea2e7ae40d6061e493a7b29355773cdb9dcd73112672903957",
+      "name": "Accordion",
+      "version": "2.0.0",
+      "appStoreVersionGuid": "5400e1e5-9d12-4f1b-8b9f-8c42a7f766d0"
+    },
+    {
+      "sha-256": "431c94d8c06e12696812bb111a09f7c2f920672543e2e0ae9cbaa311ba8d5a04",
+      "name": "ProgressCircle",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "ee8e318b-aaa1-42b1-a4bc-df30ecfd228f"
+    },
+    {
+      "sha-256": "66411dd8c26612fb9ceaed80bfa5b4f13fec5dc297f413bbd591fbda600a58c8",
+      "name": "PopupMenu",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "7fbffa68-672d-4a26-a45e-ad5e7e3c12d0"
+    }
+  ]
+}

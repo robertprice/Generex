@@ -10,17 +10,23 @@
 package generex.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.webui.CustomJavaAction;
 import com.mifmif.common.regex.Generex;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class RandomStringWithPattern extends CustomJavaAction<java.lang.String>
+/**
+ * Generate a random string that matches a supplied regular expression.
+ */
+public class RandomStringWithPattern extends UserAction<java.lang.String>
 {
-	private java.lang.String Pattern;
+	private final java.lang.String Pattern;
 
-	public RandomStringWithPattern(IContext context, java.lang.String Pattern)
+	public RandomStringWithPattern(
+		IContext context,
+		java.lang.String _pattern
+	)
 	{
 		super(context);
-		this.Pattern = Pattern;
+		this.Pattern = _pattern;
 	}
 
 	@java.lang.Override
@@ -38,6 +44,7 @@ public class RandomStringWithPattern extends CustomJavaAction<java.lang.String>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

@@ -6,8 +6,13 @@ package datawidgets.proxies.constants;
 
 import com.mendix.core.Core;
 
-public class Constants
+public final class Constants
 {
+	/**
+	 * Private constructor to prevent instantiation of this class. 
+	 */
+	private Constants() {}
+
 	// These are the constants for the DataWidgets module
 
 	public static java.lang.String getDataWidgets_Version()
